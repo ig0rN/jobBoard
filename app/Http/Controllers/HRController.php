@@ -75,6 +75,8 @@ class HRController extends Controller
      */
     public function destroy(Job $job)
     {
+        abort_unless($job->belongsToUser(), 403);
+        
         $job->delete();
 
         return redirect()->route('hr.home')->with(['success' => 'You deleted added a job']);
