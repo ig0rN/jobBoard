@@ -1,4 +1,4 @@
-# Job Grades Mini project
+# Job Board - Mini project
 
 ## Installation guide
     1) Clone repository
